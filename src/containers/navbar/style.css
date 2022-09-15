@@ -1,0 +1,11 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 16px 44px;
+    background-color: white;
+}
+
+.navbar__img {
+    height: 40px;
+    border-radius: 20px;
+}
