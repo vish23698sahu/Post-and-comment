@@ -23,4 +23,5 @@
 .commentInput__btn {
     background-color: white;
     border: none;
+    cursor: pointer;
 }
