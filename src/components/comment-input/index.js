@@ -5,12 +5,16 @@ import './style.css';
 
 export default function CommentInput({ comments, id }) {
     const [user] = useContext(UserContext).user;
-    const [comment, setComment] = useState();
+    const [comment, setComment] = useState('');
     const [commentArray] = useState(comments ? comments : []);
 
     const addComment = () => {
         //add comment to the post info
-        if (comment !== '') {
+        console.log('comment: ', comment);
+        if (comment === '') {
+            return;
+        }
+        else if (comment !== '') {
             commentArray.push({
                 comment: comment,
                 username: user.email.replace('@gmail.com', '').toLowerCase(),
