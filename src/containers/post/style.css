@@ -3,6 +3,10 @@
     max-width: 650px;
     width: 90vh;
     padding: 16px 24px;
+    border: 1px;
+    border-style: solid;
+    border-color: rgb(206, 203, 203);
+    border-radius: 5px;
 }
 
 .post__header {
@@ -14,7 +18,6 @@
 .post__headerLeft {
     display: flex;
     align-items: center;
-
 }
 
 .post__profilePic {

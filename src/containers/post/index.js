@@ -40,7 +40,7 @@ export default function Post({ profileUrl, username, id, photoURL, caption, comm
                     </div>
                 </div>
 
-                <div className='post__center'>
+                <div>
                     <img src={photoURL} className='post_photoUrl' alt='the post' />
                 </div>
 
