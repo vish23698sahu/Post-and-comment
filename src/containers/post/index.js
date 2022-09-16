@@ -3,6 +3,7 @@ import './style.css';
 import { Comment, CommentInput } from '../../components';
 import { db, storage } from '../../firebase';
 import { UserContext } from '../../contexts/user';
+import DeleteIcon from '@mui/icons-material/Delete';
 
 export default function Post({ profileUrl, username, id, photoURL, caption, comments }) {
     const [user] = useContext(UserContext).user;
@@ -36,7 +37,9 @@ export default function Post({ profileUrl, username, id, photoURL, caption, comm
                             <img src={profileUrl} className='post__profilePic' alt='your profile' />
                             <p style={{ marginLeft: '8px' }} >{username}</p>
                         </div>
-                        {user ? <button onClick={deletePost} className='post__delete' >Delete</button> : ''}
+                        {user ? <button onClick={deletePost} className='post__delete' >
+                            <DeleteIcon sx={{ fontSize: '30px' }} />
+                        </button> : ''}
                     </div>
                 </div>
 

@@ -10,7 +10,6 @@ export default function CommentInput({ comments, id }) {
 
     const addComment = () => {
         //add comment to the post info
-        console.log('comment: ', comment);
         if (comment === '') {
             return;
         }
@@ -23,7 +22,7 @@ export default function CommentInput({ comments, id }) {
             db.collection('posts').doc(id).update({ comments: commentArray })
                 .then(function () {
                     setComment('');
-                    console.log('Comment Added');
+                    // console.log('Comment Added');
                 }).catch(function (error) {
                     console.log(`Error : ${error}`)
                 })

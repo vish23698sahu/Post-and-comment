@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+import './style.css';
 
 export default function Comment({ username, caption }) {
     return (
