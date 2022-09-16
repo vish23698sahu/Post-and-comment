@@ -8,7 +8,8 @@ export default function Navbar() {
 
     return (
         <div className='navbar' >
-            <p>LetsGoSocial</p>
+            <p className='navbar__logo' >LetsGoSocial</p>
+            {user ? <p className='navbar__home' > <span className='navbar__homeColor' >Welcome Home</span> {user.displayName} !</p> : ''}
             {user ? <img className='navbar__img' src={user.photoURL} alt='user' /> : <SignInBtn />}
         </div>
     )

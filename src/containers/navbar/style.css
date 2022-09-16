@@ -9,3 +9,16 @@
     height: 40px;
     border-radius: 20px;
 }
+
+.navbar__logo {
+    font-size: 1.3em;
+    font-weight: 500;
+}
+
+.navbar__home {
+    font-size: 1.1em;
+}
+
+.navbar__homeColor {
+    color: rgb(107, 106, 106);
+}

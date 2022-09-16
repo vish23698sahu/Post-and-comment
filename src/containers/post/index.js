@@ -36,7 +36,7 @@ export default function Post({ profileUrl, username, id, photoURL, caption, comm
                             <img src={profileUrl} className='post__profilePic' alt='your profile' />
                             <p style={{ marginLeft: '8px' }} >{username}</p>
                         </div>
-                        <button onClick={deletePost} className='post__delete' >Delete</button>
+                        {user ? <button onClick={deletePost} className='post__delete' >Delete</button> : ''}
                     </div>
                 </div>
 
