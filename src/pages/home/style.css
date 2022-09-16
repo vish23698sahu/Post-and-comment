@@ -1,4 +1,12 @@
 .home {
-    background-color: #f3f2efe2;
-    height: 100%;
+    background-color: #e7e6e3e2;
+    min-height: 950px;
+    height: 150%;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.home__line {
+    font-size: 2.5em;
 }

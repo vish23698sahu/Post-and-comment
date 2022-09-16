@@ -1,7 +1,7 @@
 .navbar {
     display: flex;
     justify-content: space-between;
-    padding: 16px 44px;
+    padding: 10px 40px;
     background-color: white;
 }
 
@@ -21,4 +21,20 @@
 
 .navbar__homeColor {
     color: rgb(107, 106, 106);
+}
+
+.navbar__login {
+    background-color: #de5246;
+    text-align: center;
+    padding: 10px 16px;
+    border-color: #eca8a1;
+    border-radius: 5px;
+    color: white;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.navbar__login:focus {
+    outline: none;
+    cursor: pointer;
 }

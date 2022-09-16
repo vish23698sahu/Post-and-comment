@@ -2,6 +2,7 @@ import React, { useContext } from "react";
 import './style.css';
 import { signInWithGoogle } from '../../services/auth';
 import { UserContext } from "../../contexts/user";
+import GoogleIcon from '@mui/icons-material/Google';
 
 export default function SignInBtn() {
     const [user, setUser] = useContext(UserContext).user;
@@ -12,7 +13,9 @@ export default function SignInBtn() {
         console.log(user);
     }
 
-    return <div className="signInBtn" onClick={signInBtnClick}>
-        <p>Sign in With Google</p>
-    </div>
+    return (
+        <div className="signInBtn" onClick={signInBtnClick}>
+            <p><GoogleIcon />Sign in With Google</p>
+        </div>
+    );
 };

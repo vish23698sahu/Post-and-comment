@@ -1,0 +1,72 @@
+.signIn__container {
+    display: flex;
+    justify-content: center;
+}
+
+.signIn__box {
+    background-color: white;
+    height: 70vh;
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    box-shadow: 2px 5px 5px 5px rgb(212, 210, 210);
+    border-radius: 5px;
+}
+
+.signIn__btn {
+    height: 30px;
+    width: 60px;
+}
+
+.signIn__email {
+    height: 45px;
+    width: 40vh;
+    font-size: 20px;
+    margin-top: 15%;
+    border: 1px solid;
+    border-color: rgb(46, 50, 94);
+    border-radius: 5px;
+    text-align: center;
+    background-color: aliceblue;
+}
+
+.signIn__email:focus {
+    outline: none;
+}
+
+.signIn__password {
+    height: 45px;
+    width: 40vh;
+    font-size: 20px;
+    border: 1px solid;
+    border-color: rgb(46, 50, 94);
+    border-radius: 5px;
+    text-align: center;
+    background-color: aliceblue;
+}
+
+.signIn__password:focus {
+    outline: none;
+}
+
+.signIn__login {
+    height: 45px;
+    width: 40vh;
+    font-size: 20px;
+    margin-top: 12%;
+    border: 1px solid;
+    border-color: rgb(21, 38, 225);
+    color: white;
+    border-radius: 5px;
+    text-align: center;
+    background-color: rgb(28, 133, 226);
+}
+
+.signIn__google {
+    margin-top: 5%;
+}
+
+.signIn__signUp {
+    color: rgb(96, 131, 238);
+    cursor: pointer;
+}

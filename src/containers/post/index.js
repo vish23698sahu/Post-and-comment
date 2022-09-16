@@ -47,19 +47,20 @@ export default function Post({ profileUrl, username, id, photoURL, caption, comm
                     <img src={photoURL} className='post_photoUrl' alt='the post' />
                 </div>
 
-                <div>
-                    <p>
-                        <span style={{ fontWeight: '500', marginRight: '4px' }} >{username}</span>
-                        {caption}
-                    </p>
+                <div className='post_alignComment'>
+                    <div>
+                        <p>
+                            <span style={{ fontWeight: '500', marginRight: '4px' }} >{username}</span>
+                            {caption}
+                        </p>
+                    </div>
+                    {comments ? comments.map((comment) =>
+                        <Comment username={comment.username} caption={comment.comment} />
+                    ) : ''
+                    }
+                    {user ? <CommentInput comments={comments} id={id} /> : ''}
                 </div>
 
-                {comments ? comments.map((comment) =>
-                    <Comment username={comment.username} caption={comment.comment} />
-                ) : ''
-                }
-
-                {user ? <CommentInput comments={comments} id={id} /> : ''}
             </div>
             <br />
         </Fragment>
