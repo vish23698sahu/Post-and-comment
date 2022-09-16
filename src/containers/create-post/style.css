@@ -20,6 +20,7 @@
 .createPost__uploadBtn {
     border: none;
     background-color: white;
+    cursor: pointer;
 }
 
 .createPost__loggedInBottom {

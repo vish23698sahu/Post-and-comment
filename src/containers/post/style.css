@@ -25,6 +25,7 @@
 .post__delete {
     border: none;
     background-color: white;
+    cursor: pointer;
 }
 
 .post_photoUrl {

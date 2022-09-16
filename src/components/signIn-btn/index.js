@@ -9,9 +9,10 @@ export default function SignInBtn() {
     const signInBtnClick = async () => {
         let userBySignIn = await signInWithGoogle();
         if (userBySignIn) setUser(userBySignIn);
+        console.log(user);
     }
 
     return <div className="signInBtn" onClick={signInBtnClick}>
         <p>Sign in With Google</p>
     </div>
-}
+};
