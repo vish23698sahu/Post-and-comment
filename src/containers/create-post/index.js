@@ -9,7 +9,7 @@ import AddAPhotoIcon from '@mui/icons-material/AddAPhoto';
 import makeId from '../../helper/functions';
 
 export default function CreatePost() {
-    const [user, setUser] = useContext(UserContext).user;
+    const [user] = useContext(UserContext).user;
     const [caption, setCaption] = useState('');
     const [image, setImage] = useState(null);
     const [progress, setProgress] = useState(0);

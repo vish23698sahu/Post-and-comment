@@ -4,7 +4,7 @@ import { SignInBtn } from '../../components';
 import { UserContext } from '../../contexts/user';
 
 export default function Navbar() {
-    const [user, setUser] = useContext(UserContext).user;
+    const [user] = useContext(UserContext).user;
 
     return (
         <div className='navbar' >
