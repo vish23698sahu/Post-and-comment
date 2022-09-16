@@ -1,13 +1,13 @@
-import './App.css';
 import { UserContextProvider } from './contexts/user';
 import { Home } from './pages';
+// import { Route } from 'react-router-dom';
 
 function App() {
   return (
     <UserContextProvider>
-      <div className="App">
-        <Home />
-      </div>
+      {/* <Route path='/home' > */}
+      <Home />
+      {/* </Route> */}
     </UserContextProvider>
   );
 }
