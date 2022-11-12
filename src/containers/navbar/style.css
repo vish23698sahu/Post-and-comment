@@ -45,6 +45,15 @@
 @media (max-width: 786px) {
     .navbar{
         width: 90%;
-        padding-left: 25px;
+        padding-left: 15px;
+        margin-right: 1%;
+    }
+    .navbar__logo{
+        padding-left: 2px;
+        font-weight: 600;
+        font-size: 25px;
+    }
+    .navbar__home{
+        font-size: 12px;
     }
 }

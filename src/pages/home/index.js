@@ -24,7 +24,8 @@ export default function Home() {
             {showNavbar && <Navbar onSignInClick={navbarClickHandler} />}
             <h1 className='home__line' >Showcase your Work</h1><br />
             {!user  && <div> <p className='home__p'>Since am a Bookaholic Big Time, here I share some of Book marks I designed for my self</p>
-            <p>p. s. still learning.... </p><br /> </div>}
+            {/* <p>p. s. still learning.... </p> */}
+            <br /> </div>}
             <CreatePost /><br />
             {showCard && !user && <Card />}
             {showSignIn && !user && <SignIn />}
