@@ -13,6 +13,7 @@
 .navbar__logo {
     font-size: 1.3em;
     font-weight: 500;
+    cursor: pointer;
 }
 
 .navbar__home {
@@ -32,6 +33,7 @@
     color: white;
     font-size: 18px;
     font-weight: 400;
+    cursor: pointer;
 }
 
 .navbar__login:focus {

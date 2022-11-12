@@ -98,7 +98,7 @@ export default function CreatePost() {
                 :
                 <div>
                     <SignInBtn />
-                    <p style={{ marginLeft: '12px' }} >To view more and comment... </p>
+                    <p style={{ marginLeft: '12px' }} className="createPost__below" >To view, comment, and post... </p>
                 </div>
             }
         </div>
