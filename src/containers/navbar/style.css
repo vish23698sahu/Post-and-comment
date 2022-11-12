@@ -40,3 +40,11 @@
     outline: none;
     cursor: pointer;
 }
+
+
+@media (max-width: 786px) {
+    .navbar{
+        width: 90%;
+        padding-left: 25px;
+    }
+}

@@ -42,3 +42,11 @@
 .post_alignComment {
     text-align: start;
 }
+
+@media (max-width:786px) {
+    .post{
+        width: 95%;
+        padding-left: 10%;
+        margin-left: 8%;
+    }
+}
