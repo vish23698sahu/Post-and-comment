@@ -43,6 +43,12 @@
     text-align: start;
 }
 
+.post__hr{
+    margin-top: 5px;
+    width: 105%;
+    margin-left: 0px;
+}
+
 @media (max-width:786px) {
     .post{
         width: 95%;

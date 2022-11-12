@@ -1,5 +1,5 @@
 import React, { useContext, useState } from 'react';
-import { Card } from '../../components';
+import { Card, Footer } from '../../components';
 import { CreatePost } from '../../containers';
 import Feed from '../../containers/feed';
 import Navbar from '../../containers/navbar';
@@ -30,6 +30,7 @@ export default function Home() {
             {showCard && !user && <Card />}
             {showSignIn && !user && <SignIn />}
             {user ? <Feed /> : ''}
+            <Footer />
         </div>
     )
 }

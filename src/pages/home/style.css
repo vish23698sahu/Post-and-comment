@@ -1,7 +1,7 @@
 .home {
     background-color: #f1f0eee2;
-    min-height: 950px;
-    height: 150%;
+    min-height: 1000px;
+    height: 160%;
     align-items: center;
     justify-content: center;
     text-align: center;
@@ -18,7 +18,8 @@
     .home__line{
         width: 95%;
         text-align: center;
-        font-size: 40px;
+        font-size: 35px;
+        font-weight: 500;
     }
     .home__p{
         width: 90%;
