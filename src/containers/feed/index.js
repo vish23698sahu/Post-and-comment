@@ -3,7 +3,7 @@ import { db } from '../../firebase';
 import Post from '../post'
 import './style.css';
 
-export default function Feed() {
+export default function Feed(props) {
     const [posts, setPosts] = useState([]);
 
     useEffect(() => {
@@ -29,6 +29,7 @@ export default function Feed() {
                     photoURL={post.photoUrl}
                     caption={post.caption}
                     comments={post.comments}
+                    onDelete={props.userInfo}
                 />
             })}
         </div>

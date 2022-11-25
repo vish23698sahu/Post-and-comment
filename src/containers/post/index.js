@@ -5,27 +5,42 @@ import { db, storage } from '../../firebase';
 import { UserContext } from '../../contexts/user';
 import DeleteIcon from '@mui/icons-material/Delete';
 
-export default function Post({ profileUrl, username, id, photoURL, caption, comments }) {
+export default function Post({ profileUrl, username, id, photoURL, caption, comments, onDelete }) {
     const [user] = useContext(UserContext).user;
+
+    console.log('user post ', username);
 
     const deletePost = () => {
         //delete image from firebase storage
         //get ref to the image file to delete
         var imageRef = storage.refFromURL(photoURL);
 
+        // if (onDelete.username === username) {
         //delete the file
-        imageRef.delete().then(function () {
-            console.log('Deleted successfully.');
-        }).catch(function (error) {
-            console.log(`Error : ${error}`);
-        });
+        imageRef
+            .delete()
+            .then(function () {
+                console.log("Deleted successfully.");
+            })
+            .catch(function (error) {
+                console.log(`Error : ${error}`);
+            });
 
         //2 delete the post info from firerbase firestore Collection
-        db.collection('posts').doc(id).delete().then(function () {
-            console.log('Deleted successfully from firestore.');
-        }).catch(function (error) {
-            console.log(`Error Info : ${error}`);
-        });
+        db.collection("posts")
+            .doc(id)
+            .delete()
+            .then(function () {
+                console.log("Deleted successfully from firestore.");
+            })
+            .catch(function (error) {
+                console.log(`Error Info : ${error}`);
+            });
+        // }
+        // else{
+        // alert("You dont have permission to delete someone else's post");
+        // }
+
     }
 
     return (

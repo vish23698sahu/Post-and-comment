@@ -70,3 +70,18 @@
     color: rgb(96, 131, 238);
     cursor: pointer;
 }
+
+
+@media screen and (max-width:786px) {
+    .signIn__box {
+        background-color: white;
+        height: 58vh;
+        width: 95%;
+        display: flex;
+        justify-content: center;
+        box-shadow: 2px 5px 5px 5px rgb(212, 210, 210);
+        border-radius: 5px;
+    }
+}
+
+
