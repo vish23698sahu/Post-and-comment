@@ -8,8 +8,6 @@ import DeleteIcon from '@mui/icons-material/Delete';
 export default function Post({ profileUrl, username, id, photoURL, caption, comments, onDelete }) {
     const [user] = useContext(UserContext).user;
 
-    console.log('user post ', username);
-
     const deletePost = () => {
         //delete image from firebase storage
         //get ref to the image file to delete
