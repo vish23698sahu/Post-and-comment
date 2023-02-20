@@ -67,8 +67,8 @@ export default function Post({ profileUrl, username, id, photoURL, caption, comm
                             {caption}
                         </p>
                     </div>
-                    {comments ? comments.map((comment) =>
-                        <Comment username={comment.username} caption={comment.comment} />
+                    {comments ? comments.map((comment, i) =>
+                        <Comment key={i} username={comment.username} caption={comment.comment} />
                     ) : ''
                     }
                     {user ? <CommentInput comments={comments} id={id} /> : ''}
