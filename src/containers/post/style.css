@@ -33,11 +33,12 @@
 }
 
 .post_photoUrl {
-    width: 70%;
+    height: 50vh;
     object-fit: cover;
     margin: 16px 0px;
     text-align: center;
 }
+
 
 .post_alignComment {
     text-align: start;

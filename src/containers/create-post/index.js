@@ -30,11 +30,11 @@ export default function CreatePost() {
     const handleUpload = () => {
         if (image) {
             var imageName = makeId(10);
+            // upload the image in the firebase store
             const uploadTask = storage.ref(`images/${imageName}.jpg`).put(image);
             uploadTask.on('state_changed', (snapshot) => {
                 //progress function 1%, 2%...
                 const progress = Math.round((snapshot.bytesTransferred / snapshot.totalBytes) * 100);
-
                 setProgress(progress);
             }, (error) => {
                 console.log(error);
@@ -96,9 +96,9 @@ export default function CreatePost() {
                     </div>
                 </div>
                 :
-                <div>
+                <div className='createPost__btn'>
                     <SignInBtn />
-                    <p style={{ marginLeft: '12px' }} className="createPost__below" >To view, comment, and post... </p>
+                    <p style={{ marginLeft: '12px' }} className="createPost__below" >To view, comment, post and share your current ideas, projects... </p>
                 </div>
             }
         </div>

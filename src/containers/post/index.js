@@ -57,7 +57,7 @@ export default function Post({ profileUrl, username, id, photoURL, caption, comm
                 </div>
 
                 <div>
-                    <img src={photoURL} className='post_photoUrl' alt='the post' />
+                    <img src={photoURL} className='post_photoUrl' alt='post' />
                 </div>
 
                 <div className='post_alignComment'>

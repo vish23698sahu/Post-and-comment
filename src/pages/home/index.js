@@ -23,7 +23,7 @@ export default function Home() {
         <div className='home' >
             {showNavbar && <Navbar onSignInClick={navbarClickHandler} />}
             <h1 className='home__line' >Showcase your Work</h1><br />
-            {!user  && <div> <p className='home__p'>Since am a Bookaholic Big Time, here I share some of Book marks I designed for my self</p><br /> </div>}
+            {!user && <div> <p className='home__p'>When you find me not reading, You'll find me designing Bookmarks for self.</p><br /> </div>}
             <CreatePost /><br />
             {showCard && !user && <Card />}
             {showSignIn && !user && <SignIn />}

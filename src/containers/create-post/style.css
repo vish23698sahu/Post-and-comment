@@ -56,3 +56,11 @@
 .createPost__below{
     color: rgb(144, 44, 44);
 }
+
+.createPost__btn{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+

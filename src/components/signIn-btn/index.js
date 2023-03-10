@@ -15,7 +15,7 @@ export default function SignInBtn() {
 
     return (
         <div className="signInBtn" onClick={signInBtnClick}>
-            <p><GoogleIcon />Sign in With Google</p>
+            <p><GoogleIcon />&nbsp;Sign in With Google</p>
         </div>
     );
 };
