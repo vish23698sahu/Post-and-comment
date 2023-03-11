@@ -8,11 +8,17 @@
 }
 
 .home__line {
+    margin-top: 15px;
     font-size: 2.5em;
 }
 
 .home__p{
     font-size: 20px;
+}
+
+.home__p2{
+    color: rgb(135, 135, 135);
+    margin-bottom: 20px;
 }
 
 @media (max-width: 786px) {
